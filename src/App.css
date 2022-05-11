@@ -8,6 +8,7 @@
   padding-top: 30px;
   color: whitesmoke;
   margin-top: 0;
+  display: flex;
 }
 
 .prof-pic {
@@ -16,6 +17,7 @@
   border-radius: 50%;
   float: left;
   margin-left: 25px;
+  margin-top: 20px;
 }
 
 .about-me {
@@ -26,8 +28,8 @@
   margin-left: -350px;
   background-image: url('./images/burl.jpeg');
   color: whitesmoke;
-  width: 750px;  
-  height: 780px;
+  width: 650px;  
+  height: 720px;
   border-radius: 10%;
   padding: 10px 10px 0px 10px;
 }
@@ -38,24 +40,27 @@
 
 #subtitle {
   height: 0.5em;
+  padding-top: 15px;
 }
 
 #bio {
   text-align: center;
   width: 90%;
   max-width: 550px;
-  margin-left: 12.5%;
+  margin-left: 7.5%;
   justify-content: center;
   align-items: center;
+  padding-top: 15px;
+  font-weight: 640;
 }
 
 .projects {
   border: 1px solid #ccc;
   border-radius: 5%;
-  height: 45vh;
-  width: 30vw;
+  height: 400px;
+  width: 550px;
   min-width: 500px;
-  margin-left: 12.5%;
+  margin-left: 7.5%;
 }
 
 .project-column {
@@ -65,34 +70,72 @@
   padding: 0px;
 }
 
+#listener {
+  text-decoration: none;
+  color: whitesmoke;
+};
+
 .project {
-  border: 1px solid #ccc;
+  margin-top: 50px;
+  
+}
+
+.app-tile {
   border-radius: 50%;
-  height: 70%;
-  width: 30%;
-  min-width: 170px;
-  margin: 10px 0 0 12.5%;
-  padding: 5% 1% 1% 0;
-  cursor: pointer;
+  height: 70px;
+  width: 70px;
+  padding: 0 8px 8px 12px;
+  margin-top: 140px;
 };
 
 .app-tile {
   border-radius: 50%;
   height: 70px;
   width: 70px;
-  padding: 0 8px 8px 12px
+  padding: 0 8px 8px 12px;
+  opacity: 1 !important;
 }
 
-.project:hover {
-  background-color: rgb(199, 199, 199);
-  border-radius: 30px;
-  color: red;
-  transition: color 100ms ease-out;
-}
-
-.app-tile {
+.contact-button {
+  text-decoration: none;
+  color: black;
   border-radius: 50%;
-  height: 70px;
-  width: 70px;
-  padding: 0 8px 8px 12px
+  background-color: #ccc;
+  padding: 50px;
+}
+
+.contact-button:hover {
+  opacity: 0.4;
+  color: red;
+  transition: color 500ms ease-out;
+}
+
+.contact-button-small {
+  text-decoration: none;
+  color: black;
+  border-radius: 50%;
+  background-color: #ccc;
+  padding: 15px;
+}
+
+.contact-button-small:hover {
+  opacity: 0.4;
+  transition: color 500ms ease-out;
+}
+
+.contact-container {
+  margin-top: 40px;
+}
+
+#col-1 {
+  flex: 0.2;
+}
+
+#col-2 {
+  flex: 0.6;
+}
+
+#col-3 {
+  flex: 0.2;
+  margin-top: 70px
 }
